@@ -3,7 +3,7 @@
 ----------------------------------------*/
 
 body {
-    background-color: #ffd903;
+    background-color: #fffc00;
     font-family: 'Lato', sans-serif;
     color: #444;
 }
@@ -28,10 +28,10 @@ header {
     HERO
 ----------------------------------------*/
 #hero {
-    background-color: #ffe700;
+    background-color: #fffc00;
     padding-top: 50px;
     padding-bottom: 75px;
-    color: #fff;
+    color: #000;
 }
 #hero .intro {
     padding: 0px 10px 0px 0px;
@@ -40,7 +40,7 @@ header {
     margin-bottom: 100px;
 }
 #hero .lead {
-    color: #fff;
+    color: #000;
     margin-top: 30px;
 }
 
