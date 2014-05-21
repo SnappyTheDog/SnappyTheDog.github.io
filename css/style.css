@@ -252,8 +252,8 @@ footer .footer-links > li > a {
     white-space: nowrap;
 }
 .btn-1 {
-    background-color: #16a085;
-    border: none;
+    background-color: #000;
+    border: 2px solid #000;
     color: #fff;
     font-size: 16px;
     font-weight: 700;
@@ -264,9 +264,9 @@ footer .footer-links > li > a {
 }
 .btn-1:hover,
 .btn-1:focus {
-    background-color: #139077;
-    border: none;
-    color: #fff;
+    background-color: transparent;
+    border: 2px solid #000;
+    color: #000;
     outline: none;
 }
 .btn-2 {
