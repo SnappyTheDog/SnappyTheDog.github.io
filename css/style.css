@@ -3,7 +3,7 @@
 ----------------------------------------*/
 
 body {
-    background-color: #fffc00;
+    background-color: #fff;
     font-family: 'Lato', sans-serif;
     color: #444;
 }
@@ -69,10 +69,10 @@ header {
     IMAGE
 ----------------------------------------*/
 #image {
-    background-color: #8cddcd;
-    color: #444;
+    background-color: #fff;
+    color: #000;
     padding-top: 100px;
-    padding-bottom: 0px;
+    padding-bottom: 100px;
 }
 
 /*----------------------------------------
@@ -226,13 +226,13 @@ header {
     FOOTER
 ----------------------------------------*/
 footer {
-    background-color: #fffc00;
-    color: #000;
+    background-color: #000;
+    color: #fff;
     margin: 0;
     padding: 0;
 }
 footer .footer-links > li > a {
-    color: #000;
+    color: #fff;
 }
 
 /*----------------------------------------
