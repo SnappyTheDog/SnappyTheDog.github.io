@@ -29,6 +29,50 @@
             <script src="js/html5shiv.js"></script>
             <script src="js/respond.min.js"></script>
             <![endif]-->
+
+    <!-- start Mixpanel -->
+    <script type="text/javascript">
+        (function (f, b) {
+            if (!b.__SV) {
+                var a, e, i, g;
+                window.mixpanel = b;
+                b._i = [];
+                b.init = function (a, e, d) {
+                    function f(b, h) {
+                        var a = h.split(".");
+                        2 == a.length && (b = b[a[0]], h = a[1]);
+                        b[h] = function () {
+                            b.push([h].concat(Array.prototype.slice.call(arguments, 0)))
+                        }
+                    }
+                    var c = b;
+                    "undefined" !== typeof d ? c = b[d] = [] : d = "mixpanel";
+                    c.people = c.people || [];
+                    c.toString = function (b) {
+                        var a = "mixpanel";
+                        "mixpanel" !== d && (a += "." + d);
+                        b || (a += " (stub)");
+                        return a
+                    };
+                    c.people.toString = function () {
+                        return c.toString(1) + ".people (stub)"
+                    };
+                    i = "disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+                    for (g = 0; g < i.length; g++) f(c, i[g]);
+                    b._i.push([a, e, d])
+                };
+                b.__SV = 1.2;
+                a = f.createElement("script");
+                a.type = "text/javascript";
+                a.async = !0;
+                a.src = "//cdn.mxpnl.com/libs/mixpanel-2.2.min.js";
+                e = f.getElementsByTagName("script")[0];
+                e.parentNode.insertBefore(a, e)
+            }
+        })(document, window.mixpanel || []);
+        mixpanel.init("0c247095bdbb9e9ea857af753928223d");
+    </script>
+    <!-- end Mixpanel -->
 </head>
 
 <body>
@@ -44,11 +88,16 @@
                     <div class="intro">
                         <h1>Snappy is Snapchat's best friend.</h1>
                         <p class="lead">Snappy is a ghost puppy. He will loyally deliver your Snaps directly to your Mac<sup>&reg;</sup>. View, send and add awesome filters to your Snaps to make your <i>selfies</i> look even better. Available on the Mac App Store <b>soon</b>.</p>
-                        <div class="buttons">
+                        <div class="buttons" id="nav">
                             <a href="http://lnchmny.tk/01/dwnld?src=website" class="btn btn-1 btn-lg"><i class="fa fa-download icon"></i>Download</a>
                             <!-- <a href="#" class="btn"><img src="img/macappstore.png" /></a> -->
                             <a href="#image" class="btn btn-link btn-lg" style="color:#000"><i class="fa fa-arrow-circle-o-right" style="color:#000"></i> Learn more</a>
                         </div>
+                        <script type="text/javascript">
+    						mixpanel.track_links("#nav a", "click nav link", {
+        						"referrer": document.referrer
+    						});
+						</script>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6">
