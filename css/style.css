@@ -90,7 +90,7 @@ header {
     SHARE
 ----------------------------------------*/
 #share {
-    background-color: #dddddd;
+    background-color: #fff;
     color: #444;
     padding-top: 100px;
     padding-bottom: 180px;
@@ -142,7 +142,7 @@ header {
     GALLERY
 ----------------------------------------*/
 #gallery {
-    background-color: #fff;
+    background-color: #dddddd;
     padding-top: 100px;
     padding-bottom: 150px;
 }
