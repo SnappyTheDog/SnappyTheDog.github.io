@@ -571,6 +571,10 @@ hr.separator-alt {
     .btn-wide {
         padding: 15px 50px;
     }
+
+    #share {
+        display: none;
+    }
 }
 @media (width: 1024px) {
     #hero img {
@@ -624,15 +628,33 @@ hr.separator-alt {
     #owl-demo .item img {
         
     }
+
+    #share {
+        display: none;
+    }
 }
 @media (width: 480px) {
     #image .text {
         text-align: center;
         padding-bottom: 25px;
     }
+
+    #share {
+        display: none;
+    }
 }
 @media (width: 360px) {
     #gallery #owl-demo .item {
         padding-left: 15px;
+    }
+
+    #share {
+        display: none;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 640px) {
+    #share {
+        display: none;
     }
 }
