@@ -640,9 +640,9 @@ hr.separator-alt {
 
 }
 
-.imagemobile {
+.imagemobile iframe {
     max-width: 90%;
-    height: auto;
+    height: 80%;
     display: block;
     margin-left: auto;
     margin-right: auto;
